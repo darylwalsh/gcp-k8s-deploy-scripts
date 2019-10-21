@@ -1,6 +1,6 @@
 {
   "name": "gcp-k8s-deploy-scripts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "kubernetes on google cloud platform",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "styleguide:build": "...",
     "prettier:check": "prettier --check 'src/**/*.{js,mdx}'",
     "validate": "run-s test lint prettier:check",
-    "prerelease": "git checkout master && git pull origin master && npm i && run-s validate styleguide:build && git-authors-cli && git add .",
+    "prerelease": "git-authors-cli && git add .",
     "release": "standard-version -a",
     "postrelease": "run-s release:*",
     "release:tags": "git push --follow-tags origin master",
