@@ -19,10 +19,7 @@
     "prepublishOnly": "npm run ci:validate && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/darylwalsh/gcp-k8s-deploy-scripts.git"
-  },
+  "repository": "git+ssh://git@github.com/darylwalsh/gcp-k8s-deploy-scripts.git",
   "keywords": [
     "kubernetes",
     "k8s",
